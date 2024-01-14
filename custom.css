@@ -14,7 +14,7 @@ body {
   background: #555d68;
 
 }
-.col-9{
+/**.col-9{
 	
   border-radius: 0px 35px 35px 0px;
   box-shadow:  0px 0px 35px 10px  rgb(226, 232, 240, 0.4);
@@ -37,7 +37,7 @@ margin-left: 50px;
 
 	box-shadow:  0px 0px 5px 1px  rgb(226, 232, 240);
   z-index:100;
-}
+}**/
 #h2baslik
 {
   font-family: Comic Sans MS, Comic Sans, cursive;    
