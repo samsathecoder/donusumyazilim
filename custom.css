@@ -7,11 +7,31 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   min-height: 100vh;
-	text-align: center;
+  text-align: center;
 }
 .navbar
 {
+  width:100%;
   background: #555d68;
+}
+.nav-item:hover{
+  color:#000000;
+font-weight: 600;
+}
+.col-9{
+	
+  border-radius: 35px 35px 35px 35px;
+  box-shadow:  10px 10px 35px 10px  rgb(226, 232, 240, 0.4);
+  z-index:100;
+  background: #fff;
+  margin-bottom: 20px;
+}
+#horizantal{
+  box-shadow:  10px 10px 35px 10px  rgb(226, 232, 240, 0.4);
+  z-index:100;
+  background: #fff;
+
+  padding: 20px;
 }
  /**  body içinde 2ye bölüm         .col-9{
 	
@@ -42,7 +62,7 @@ margin-left: 50px;
   font-family: Comic Sans MS, Comic Sans, cursive;    
 margin-top: 30px;
 font-weight: normal;
-font-size: larger ;
+font-size: 38px ;
 font-smooth: auto;
 color: rgb(58, 55, 96);
 }
@@ -54,9 +74,10 @@ margin-top: 30px  ;
 }
 
 .card{
-  border-radius: 4px;
+
+  border-radius: 2px;
   background: #fff;
-  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  box-shadow:0  0 35px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 padding: 14px 80px 18px 36px;
 cursor: pointer;
@@ -82,28 +103,28 @@ max-height: 120px;
 background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
     background-repeat: no-repeat;
   background-position: right;
-  background-size: 60px;
+  background-size: 40px;
 }
 
 .card-2{
  background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
     background-repeat: no-repeat;
   background-position: right;
-  background-size: 60px;
+  background-size: 40px;
 }
 
 .card-3{
  background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
     background-repeat: no-repeat;
   background-position: right;
-  background-size: 60px;
+  background-size: 40px;
 }
 
 .card-4{
   background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
      background-repeat: no-repeat;
    background-position: right;
-   background-size: 60px;
+   background-size: 40px;
  }
 
 @media(max-width: 990px){
@@ -198,9 +219,7 @@ font-weight: 200;
 }
 
 #text2 {
-  text-align:center;
-  text-align:center;
-  text-align: center;
+
   color:#000000;
 font-weight: 200;
 
