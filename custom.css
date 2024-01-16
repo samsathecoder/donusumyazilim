@@ -67,8 +67,9 @@ font-smooth: auto;
 color: rgb(58, 55, 96);
 }
 #h2yazi{
+	padding:10px;
   font-family: Bradley Hand, cursive;                               
-font-size: 46px;
+font-size: 43px;
 font-weight: 800;
 margin-top: 30px  ;
 }
