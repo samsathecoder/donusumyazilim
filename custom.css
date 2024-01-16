@@ -28,10 +28,10 @@ font-weight: 600;
 }
 #horizantal{
   box-shadow:  10px 10px 35px 10px  rgb(226, 232, 240, 0.4);
-  z-index:100;
+
   background: #fff;
 
-  padding: 20px;
+ 
 }
  /**  body içinde 2ye bölüm         .col-9{
 	
