@@ -22,11 +22,86 @@
             background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
         }
 
-        /* Footer styling */
-        .footer {
-            background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
-            color: white; /* Text color */
-        }
+     .footer {
+  position: relative;
+  bottom: -10px;
+  width: 100%;
+ /**rgb(105, 102, 135); morumsu renk**/
+ 
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+  color: red;
+}
+#slider{
+background-color: #25d366;
+  width: auto;
+  height: 500px;
+
+
+} 
+
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+#text {
+  font-family: Arial, Helvetica, sans-serif;
+  color:whitesmoke;
+
+}
+
+#text1 {
+  color:#FFF;
+  text-align:center;
+font-weight: 200;
+}
+#text1:hover {
+  text-align:center;
+  font-size: larger;
+  color:rgba(255, 0, 0, 0.802);
+  opacity: 1;
+  font-weight: 400;
+}
+
+#text2 {
+
+  color:#000000;
+font-weight: 200;
+
+}
 
         /* Main content styling */
         #cbody {
@@ -85,19 +160,21 @@
 
     <!-- Main Content -->
     <div id="cbody" class="container fade-in">
-        <h1>Engin İŞÇİMEN</h1>
-        <p>Sosyal Medya Uzmanı</p>
-        
+    
+  
+
+
         <div class="row">
             <div class="col-md-6">
                 <img src="aboutmephoto.jpeg" class="rounded-circle mx-auto d-block" style="width:300px; height: 300px;" alt="Cinque Terre">
-                <h2 class="text-center">Ebgin işçimen</h2>
+                <h2 class="text-center">Engin İŞÇİMEN</h2>
                 <p class="text-center">Sosyal Medya Uzmanı</p>
                 <p class="text-center">Digital Marketing, Online Marketing, Performance Marketing, Social Media Marketing, Content Management, Content Strategy, Retargeting, Remarketing, Sales Management, Search Engine Optimization</p>
             </div>
             <div class="col-md-6">
                 <h2>Deneyimler</h2>
                 <ul class="list-group">
+				<li class="list-group-item experience-item">
                 <div class="container">
                         <div class="row">
                             <div class="col-2">
@@ -127,6 +204,53 @@
                         </div>
                     </div>
                 </li>
+				 <li class="list-group-item experience-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <img width="48" class="rounded-circle" src=" https://media.licdn.com/dms/image/C4D0BAQGpHhfqCsjlJQ/company-logo_100_100/0/1631346805618?e=1714003200&v=beta&t=CfraskSi_ntaqaBix7zP1pCHF4nJ3ODfFl2feLSwS6o">
+                            </div>                                         
+                            <div class="col-10">
+                                <h6>Digital Marketing 2019-2020</h6>
+                                <p>Arkin University of Creative Arts and Design (ARUCAD)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+								 <li class="list-group-item experience-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <img width="48" class="rounded-circle" src=" https://media.licdn.com/dms/image/C4D0BAQHFJKF0Bo-cgA/company-logo_100_100/0/1630572757570?e=1714003200&v=beta&t=bW1cRS9vBG-dSdoTFRI1qiE7VNUBU6IeZ9jbzTNsOx0">
+                      </div>                                   
+                            <div class="col-10">
+                                <h6>Sales Manager MTA GLOBAL 2017-2018</h6>
+                                <p>Managing the whole sales process to acquire new clients</p>
+								                                <p>Understanding the needs of potential customers, finding sustainable solutions.</p>
+                                <p>Reporting to superiors</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+								 <li class="list-group-item experience-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <img width="48" class="rounded-circle" src=" https://media.licdn.com/dms/image/C4E0BAQEbS7aqayMoZA/company-logo_100_100/0/1631320527707?e=1714003200&v=beta&t=HYT_uyWNlxfOv65fKtsMME0gCkotjYpK_MavlGrzxjY">
+                      </div>
+                    
+                            <div class="col-10">
+                                <h6>Digital Marketing and Content Specialist 2013-2016</h6>
+                                <p>Managing the social media channels of clients </p>
+								                                <p>Managing Google Ads and Google Analtiycs of clients</p>
+                                <p>Following the goals of clients</p>
+                                <p>      Organizing interviews of clients</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
                     <!-- Add other experience items similarly -->
                 </ul>
             </div>
@@ -134,7 +258,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer mt-auto">
+    <footer class="footer mt-auto bg-dark">
 
       <div class="container-fluid ">
           <div class="row">
