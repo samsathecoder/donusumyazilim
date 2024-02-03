@@ -72,20 +72,6 @@ margin-top: 30px  ;
     }
 }
 
-@media (max-width: 576px) {
-  .carousel-item .d-flex {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-  }
-  .carousel-item .card {
-    flex: 0 0 calc(100% - 10px);
-    margin-right: 10px;
-    scroll-snap-align: start;
-  }
-}
 
 
 
