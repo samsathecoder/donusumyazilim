@@ -74,19 +74,30 @@ margin-top: 30px  ;
     }
 }
 
-
-.card-animate {
-  transition: all 0.5s ease-in-out;
+@media (min-width: 576px) {
+    .carousel-item .d-flex {
+        display: flex;
+    }
+    .carousel-item .card {
+        flex: 0 0 30%; /* Adjust the width of each card as needed */
+        margin-right: 15px; /* Adjust spacing between cards */
+    }
+    .carousel-item .card:last-child {
+        margin-right: 0; /* Remove margin from the last card */
+    }
 }
 
-.card-active {
-  transform: scale(1.2); /* Larger size for the active card */
-  opacity: 1; /* Full opacity for the active card */
-}
-
-.card-inactive {
-  transform: scale(1); /* Regular size for inactive cards */
-  opacity: 0.5; /* Reduced opacity for inactive cards */
+@media (max-width: 576px) {
+    .carousel-item .d-flex {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    }
+    .carousel-item .card {
+        flex: 0 0 auto; /* Show only one card per row on mobile */
+        margin-right: 10px; /* Adjust spacing between cards */
+    }
 }
 
 
