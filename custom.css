@@ -74,18 +74,29 @@ margin-top: 30px  ;
     }
 }
 
+@media (min-width: 576px) {
+    .carousel-item .d-flex {
+        display: flex;
+    }
+    .carousel-item .card {
+        flex: 0 0 30%; /* Adjust the width of each card as needed */
+        margin-right: 15px; /* Adjust spacing between cards */
+    }
+    .carousel-item .card:last-child {
+        margin-right: 0; /* Remove margin from the last card */
+    }
+}
+
 @media (max-width: 576px) {
     .carousel-item .d-flex {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: x mandatory; /* Enable snapping for smoother scrolling */
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
     }
     .carousel-item .card {
-        flex: 0 0 calc(100% - 10px); /* Show only one card per row on mobile */
+        flex: 0 0 auto; /* Show only one card per row on mobile */
         margin-right: 10px; /* Adjust spacing between cards */
-        scroll-snap-align: start; /* Ensure each card aligns to the start */
     }
 }
 
