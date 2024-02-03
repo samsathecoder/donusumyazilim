@@ -25,13 +25,7 @@ font-weight: 600;
   z-index:100;
   background: #fff;
   margin-bottom: 20px;
-}
-#horizantal{
-  box-shadow:  10px 10px 35px 10px  rgb(226, 232, 240, 0.4);
 
-  background: #fff;
-
- 
 }
  /**  body içinde 2ye bölüm         .col-9{
 	
@@ -73,67 +67,27 @@ font-size: 41px;
 font-weight: 800;
 margin-top: 30px  ;
 }
-
-.card{
-
- min-height:300px;
-  background: #fff;
-  box-shadow:0  0 35px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-padding: 14px 80px 18px 36px;
-cursor: pointer;
+@media (max-width: 576px) {
+    .main-timeline .timeline {
+        margin: 0 auto;
+        width: 90%;
+    }
 }
 
-.card:hover{
-   transform: scale(1.05);
-box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
+.card-animate {
+  transition: all 0.5s ease-in-out;
 }
 
-.card h3{
-font-weight: 600;
+.card-active {
+  transform: scale(1.2); /* Larger size for the active card */
+  opacity: 1; /* Full opacity for the active card */
 }
 
-.card img{
-position: absolute;
-top: 20px;
-right: 15px;
-max-height: 120px;
+.card-inactive {
+  transform: scale(1); /* Regular size for inactive cards */
+  opacity: 0.5; /* Reduced opacity for inactive cards */
 }
-
-.card-1{
-background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
-    background-repeat: no-repeat;
-  background-position: right;
-  background-size: 40px;
-}
-
-.card-2{
- background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
-    background-repeat: no-repeat;
-  background-position: right;
-  background-size: 40px;
-}
-
-.card-3{
- background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
-    background-repeat: no-repeat;
-  background-position: right;
-  background-size: 40px;
-}
-
-.card-4{
-  background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
-     background-repeat: no-repeat;
-   background-position: right;
-   background-size: 40px;
- }
-
-@media(max-width: 990px){
-.card{
-  margin: 20px;
-}
-} 
-
 
 
 
