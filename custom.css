@@ -273,14 +273,14 @@ font-weight: 200;
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
 
-h6{
+#section{
   display: inline-block;
   color: white;
   font-family: 'Righteous', serif;
 
   text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
   }
-  h6:after {
+  #section:after {
     content: attr(data-shadow);
     position: absolute;
     top: .06em; left: .06em;
