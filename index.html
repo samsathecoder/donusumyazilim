@@ -330,9 +330,8 @@
                   </div>
           </div>
                 
-          <br></hr>
-          <marquee behavior="alternate"><a style="font-weight:bold;" href="contact.html">Hizmetlerimiz ve detaylı bilgi için iletişim formumuzu hemen buraya tıklayarak doldurun. </a></marquee>
-        </hr>
+          <br>
+          
           <!-- <div class="col-2 ">    <h6  style=" font-weight: 300; margin-top: 10px;">Sorularınız için formu doldurun</h6>
               
               <hr style=" padding-left: 5px;"> 
@@ -373,7 +372,17 @@
       </div>
       </div>
 
+    <?php
+$to = "alfreidsamsa@gmail.com";
+$subject = "My subject";
+$txt = "exampleFormControlTextarea1";
+$headers = "From: exampleFormControlInput1" . "\r\n" .
+"CC: somebodyelse@example.com";
 
+mail($to,$subject,$txt,$headers);
+
+
+?>
         <div id="cbody1" class="container fade-in"> 
         
            <h6  style=" font-weight: 300; margin-top: 10px;">Sorularınız için formu doldurun</h6>
@@ -395,7 +404,7 @@
                 <label id="text2"  for="exampleFormControlTextarea1">Mesajınız</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Mesajınızı yazınız..." rows="3"></textarea>
               </div>
-           <button type="submit" class="btn btn-light" style="color:azure ; background-color: rgb(58, 55, 96);" >Gönder</button>
+           <button type="submit" class="btn btn-dark"  >Gönder</button>
             </form>
             
   
