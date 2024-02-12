@@ -371,38 +371,7 @@
       
       </div>
       </div>
-<?php
-function mailgonder(){
-         require "class.phpmailer.php"; // PHPMailer dosyamızı çağırıyoruz  
-         $mail = new PHPMailer();   
-         $mail->IsSMTP();
-         $mail->From     = "exampleFormControlInput1"; //Gönderen kısmında yer alacak e-mail adresi  
-         $mail->Sender   = "exampleFormControlInput1";  
-         $mail->FromName = "Web Mesaj";  
-         $mail->Host     = "smtp-mail.outlook.com"; //SMTP server adresi  
-         $mail->SMTPAuth = true;  
-         $mail->Username = "mertcan.i@outlook.com"; //SMTP kullanıcı adı  
-         $mail->Password = "19Hacfbker98."; //SMTP şifre  
-		 $mail->SMTPSecure="";
-         $mail->Port = "587";
-         $mail->CharSet = "utf-8";
-         $mail->WordWrap = 50;  
-         $mail->IsHTML(true); //Mailin HTML formatında hazırlanacağını bildiriyoruz.  
-         $mail->Subject  = "Konu";
 
-         $mail->Body = "exampleFormControlTextarea1";  
-         $mail->AltBody = strip_tags("mesaj");
-         $mail->AddAddress("exampleFormControlInput1"); 
-         return ($mail->Send())?true:false;      
-         $mail->ClearAddresses();  
-         $mail->ClearAttachments();
-}
-
-if(mailgonder()) echo "başarılı";
-else echo "olmadı";
-
-
-?>
         <div id="cbody1" class="container fade-in"> 
         
            <h6  style=" font-weight: 300; margin-top: 10px;">Sorularınız için formu doldurun</h6>
