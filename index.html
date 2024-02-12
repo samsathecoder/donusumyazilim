@@ -373,7 +373,7 @@
       </div>
 <?php
 function mailgonder(){
-         require "inc/class.phpmailer.php"; // PHPMailer dosyamızı çağırıyoruz  
+         require "class.phpmailer.php"; // PHPMailer dosyamızı çağırıyoruz  
          $mail = new PHPMailer();   
          $mail->IsSMTP();
          $mail->From     = "exampleFormControlInput1"; //Gönderen kısmında yer alacak e-mail adresi  
